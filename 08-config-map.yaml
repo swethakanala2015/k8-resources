@@ -1,0 +1,9 @@
+kind: pod
+apiversion: v1
+metadata:
+    name: env-test
+data: 
+  course: "Devops with AWS"
+  trainer: "sivakumar"
+  github: "http:..github.com/daws-78s/k8-resources"
+  
