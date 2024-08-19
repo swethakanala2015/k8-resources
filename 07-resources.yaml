@@ -1,0 +1,16 @@
+kind: pod
+apiversion: v1
+metadata:
+    name: env-test
+spec: 
+  containers: 
+  - name: nginx
+  image: nginx
+  resources:
+   requests:
+     cpu: "100M"
+     memory: "128Mi"
+  # limits should be atleast same or more than request
+  limits: 
+    cpu: "100M"
+    memory: "128Mi"
