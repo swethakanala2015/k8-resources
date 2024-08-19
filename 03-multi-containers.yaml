@@ -4,6 +4,8 @@ metadata:
    name: nginx
 spec:
   containers:
-   -name: nginx
+-name: nginx
    image: nginx
-  
+- name: alma
+   image: "almalinux:9"
+   command: "sleep 2000"
