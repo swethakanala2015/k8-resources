@@ -1,0 +1,14 @@
+apiversion: v1
+kind: service
+metadata: 
+ name: nginx
+spec: 
+ selector:
+      name: front-end
+      project: expense
+      component: frontend
+      environment: dev
+  ports:
+    - protocol: TCP
+      port: 80
+      targetport: 9376
