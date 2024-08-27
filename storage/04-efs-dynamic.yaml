@@ -9,3 +9,34 @@ spec:
   resources:
     requests:
       storage: 5Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: efs-dynamic
+  labels:
+    purpose: efs-dynamic
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+        - name: persistent-storage
+          mountPath: /data
+  volumes:
+    - name: persistent-storage
+      persistentVolumeClaim:
+        claimName: efs-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: efs-dynamic
+spec:
+  selector:
+    purpose: efs-dynamic
+  ports:
+  - protocol: TCP
+    volumeName: efs-static
+    port: 80 #service-port
+    targetPort: 80
