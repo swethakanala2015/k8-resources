@@ -55,5 +55,6 @@ spec:
     purpose: efs-static
   ports:
   - protocol: TCP
+    volumeName: efs-static
     port: 80 #service-port
     targetPort: 80
