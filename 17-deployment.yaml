@@ -8,7 +8,7 @@ metadata:
      purpose: deployment
      tier: web
 spec:
-     replicas: 20
+     replicas: 5
      selector:
         matchLabels:
           app: nginx
@@ -26,3 +26,20 @@ template:
    containers:
    - name: nginx
      image: nginx
+  
+---
+
+apiversion: v1
+kind: service
+metadata: 
+ name: nginx
+spec: 
+ selector:
+      app: nginx
+      tier: web
+      project: test-project
+      extra-key: extra-value
+ports:
+    - protocol: TCP
+      port: 80  #service-port
+      targetport: 80 #target-port
