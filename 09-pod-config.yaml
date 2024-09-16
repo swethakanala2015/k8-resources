@@ -8,16 +8,16 @@ spec:
     image: nginx
     envFrom:
     - configMapRef:
-        name: daws78s
+        name: swethakanala
     env:
     - name: course
       valueFrom:
         configMapKeyRef:
-          name: daws78s
+          name: swethakanala
           key: course
     - name: trainer
       valueFrom:
         configMapKeyRef:
-          name: daws78s
+          name: swethakanala
           key: trainer
 
