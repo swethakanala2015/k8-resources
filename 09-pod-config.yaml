@@ -16,5 +16,5 @@ spec:
       valueFrom:
             configMapKeyRef:
                name: swethakanala
-               key: "sivakumar"
+               key: "trainer"
 
