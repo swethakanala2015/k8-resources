@@ -1,7 +1,7 @@
 kind: pod
 apiversion: v1
 metadata:
-    name: env-test
+  name: env-test
 spec: 
   containers: 
   - name: nginx
