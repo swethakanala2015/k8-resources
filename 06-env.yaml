@@ -7,7 +7,7 @@ spec:
   - name: nginx
   image: nginx
   env:
-  - name: course
-  value: 'kubernetes'
-  # - name: duration
-  # value: '20hours'
+   - name: course
+     value: 'kubernetes'
+   - name: duration
+     value: '20hours'
