@@ -1,4 +1,4 @@
-kind: pod
+kind: configMap
 apiversion: v1
 metadata:
     name: env-test
