@@ -5,16 +5,16 @@ metadata:
 spec:
   containers:
   - name: nginx
-  image: nginx
-  env: 
+    image: nginx
+    env: 
     - name: "course"
       valueFrom:
-            configMapKeyRef:
-              name: swethakanala           # The ConfigMap this value comes from.
-              key: "course"
+          configMapKeyRef:
+            name: swethakanala           # The ConfigMap this value comes from.
+            key: "course"
     - name: "trainer"
       valueFrom:
-            configMapKeyRef:
-               name: swethakanala
-               key: "trainer"
+          configMapKeyRef:
+              name: swethakanala
+              key: "trainer"
 
