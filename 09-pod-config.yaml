@@ -7,14 +7,14 @@ spec:
   - name: nginx
     image: nginx
     env: 
-    - name: "course"
+    - name: course
       valueFrom:
           configMapKeyRef:
             name: swethakanala           # The ConfigMap this value comes from.
-            key: "course"
-    - name: "trainer"
+            key: course
+    - name: trainer
       valueFrom:
           configMapKeyRef:
               name: swethakanala
-              key: "trainer"
+              key: trainer
 
