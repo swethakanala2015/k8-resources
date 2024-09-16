@@ -1,9 +1,9 @@
-kind: configMap
-apiversion: v1
+apiVersion: v1
+kind: ConfigMap
 metadata:
-    name: env-test
-data: 
-  course: "Devops with AWS"
-  trainer: "swetha"
-  github: "https://github.com/swethakanala2015/k8-resources"
+  name: daws78s
+data:
+  course: "DevOps with AWS"
+  trainer: "sivakumar"
+  github: "https://github.com/daws-78s/k8-resources"
   
