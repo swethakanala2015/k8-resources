@@ -1,9 +1,9 @@
-kind: pod
-apiversion: v1
+kind: Pod
+apiVersion: v1
 metadata:
   name: env-test
-spec: 
-  containers: 
+spec:
+  containers:
   - name: nginx
     image: nginx
     env:
