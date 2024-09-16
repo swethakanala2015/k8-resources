@@ -1,7 +1,7 @@
 kind: pod
 apiversion: v1
 metadata:
-    name: labels
+    name: annotations
     labels:
         course: k8
         trainer: sivakumar
