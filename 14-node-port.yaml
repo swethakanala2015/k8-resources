@@ -3,7 +3,7 @@ kind: service
 metadata: 
    name: nginx-np
 spec:
-  type: NodePort
+   type: NodePort
    selector:
       name: frontend
       project: expense
